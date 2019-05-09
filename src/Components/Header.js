@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => (
   <header>
@@ -7,32 +7,32 @@ const Header = () => (
       <div className="navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to="/" className="navbar-brand">
+            <NavLink to="#" className="navbar-brand">
               Open Vilnius
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item ">
-            <Link to="/" className="nav-link" activeclassname="active">
+            <NavLink to="/" className="nav-link" activeClassName="active">
               Pagrindinis
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
               to="/grafity-in-city"
               className="nav-link"
-              activeclassname="active"
+              activeClassName="active"
             >
               Graffity mieste
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link
+            <NavLink
               to="/dangerous-objects"
               className="nav-link"
-              activeclassname="active"
+              activeClassName="active"
             >
               Pavojingi Objektai mieste
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
